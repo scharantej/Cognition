@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task List</title>
+</head>
+<body>
+<h1>Task List</h1>
+<ul>
+{% for task in tasks %}
+<li>{{ task }}</li>
+{% endfor %}
+</ul>
+<form action="/add" method="post">
+<input type="text" name="task" placeholder="Add a task">
+<input type="submit" value="Add">
+</form>
+</body>
+</html>
+
+
